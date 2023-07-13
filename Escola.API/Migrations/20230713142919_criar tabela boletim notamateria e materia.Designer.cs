@@ -4,6 +4,7 @@ using Escola.API.DataBase;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Escola.API.Migrations
 {
     [DbContext(typeof(EscolaDbContexto))]
-    partial class EscolaDbContextoModelSnapshot : ModelSnapshot
+    [Migration("20230713142919_criar tabela boletim notamateria e materia")]
+    partial class criartabelaboletimnotamateriaemateria
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
